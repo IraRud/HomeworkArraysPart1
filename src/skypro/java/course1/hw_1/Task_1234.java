@@ -18,5 +18,27 @@ public class Task_1234 {
         thirdArray[0] = 'S';
         thirdArray[1] = 'M';   // объявление третьего массива
 
+        /* Задача 2
+        Пройдите по каждому из трех массивов и распечатайте все элементы всех трех массивов, начиная с первого элемента,
+        через запятую. Запятая между последним элементом одного массива и первым элементом следующего не нужна.   */
+        System.out.println("\nЗадание №2.");
+        for (int i = 0; i < 3; i++) {
+            if (i != firstArray.length - 1) {
+                System.out.printf("%d, ", firstArray[i]);
+            } else {
+                System.out.printf("%d\n", firstArray[i]);
+            }
+        }    // вывод первого массива
+        for (int i = 0; i < secondArray.length; i++) {
+            if (i != secondArray.length - 1) {
+                System.out.printf("%.3f, ", secondArray[i]);
+            } else {
+                System.out.printf("%.3f\n", secondArray[i]);
+            }
+        }    // вывод второго массива
+        System.out.printf("%c, %c\n", thirdArray[0], thirdArray[1]);   // вывод третьего массива
+
+
+
     }
 }
